@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lmao</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content" id="content" style="display:none;">
+            <h1 class="title">Hate Counter</h1>
+            <button class="count-button" onclick="incrementCounter()">Click to Count</button>
+            <p class="counter-text" id="counterText">Count: 0</p>
+            <p class="description">
+                <i>Click here if you hate <span class="italic">that university</span></i>
+            </p>
+            <p class="extra-description">
+                <i style="font-size: 0.8rem;">If you get into this website and don't know what is going on, you probably should leave</i>
+            </p>
+        </div>
+
+        <div class="password-prompt" id="passwordPrompt">
+            <h2>This site is <i><b>password-protected</b></i>:</h2>
+            <p>Which is the "U" school that the owner mentioned in this web?</p>
+            <input type="text" id="passwordInput" placeholder="Enter answer">
+            <button onclick="checkPassword()">Submit</button>
+            <p><i style="font-size: 0.8rem;">If you have seen the source code, you've known what that is</i></p>
+        </div>
+    </div>
+    <footer>
+        <p id="footerText"></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

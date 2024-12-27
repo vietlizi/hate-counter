@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.count-button {
+    background-color: #ff5733;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.count-button:hover {
+    background-color: #c74d32;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.counter-text {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.extra-description {
+    margin-top: 20px;
+}
+
+.password-prompt {
+    text-align: center;
+}
+
+.password-prompt input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.password-prompt button {
+    background-color: #ff5733;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p {
+    color: black;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+::selection {
+    background-color: #ff5733;
+    color: black;
+}
