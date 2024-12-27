@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Vũ Dũng & Cao Hà Dương</title>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-tab" id="mainTab">
+            <h1>Vũ Dũng <span id="loveSymbol" class="heart">♡</span> Cao Hà Dương</h1>
+        </div>
+
+        <div class="wish-box" id="wishBox">
+            <h2>Hãy gửi những lời chúc tốt đẹp nhất tới đôi bạn trẻ</h2>
+            <form id="wishForm">
+                <label for="name">Tên bạn:</label>
+                <input type="text" id="name" required><br><br>
+                <label for="wish">Lời chúc:</label><br>
+                <textarea id="wish" required></textarea><br><br>
+                <button type="submit">Gửi</button>
+            </form>
+        </div>
+
+        <div class="display-wishes" id="displayWishes">
+            <h2>Những lời chúc đã gửi:</h2>
+            <ul id="wishesList"></ul>
+        </div>
+
+        <div id="flowers" class="flowers"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
